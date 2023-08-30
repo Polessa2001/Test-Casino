@@ -7,7 +7,7 @@ const Filters = () => {
   return (
     <div className="filters">
       {filters.map((filter) => (
-        <div className = "filter"key={filter.id}>
+        <div className = "filter" key={filter.id}>
           <img src={filter.img} alt={filter.filter} />
           <p>{filter.filter}</p>
         </div>

@@ -11,10 +11,10 @@ const filtersData = [
   {filter: "slots", img: slots},
   {filter: "books", img: books},
   {filter: "drops", img: drops},
-  {filter: "instantWin", img: instantWin},
+  {filter: "instant Win", img: instantWin},
   {filter: "jasckpots", img: jasckpots},
   {filter: "megaways", img: megaways},
   {filter: "popular", img: popular},
-  {filter: "tableGames", img: tableGames}
+  {filter: "table Games", img: tableGames}
 ];
 export default filtersData;

@@ -1,0 +1,9 @@
+.mainContent {
+  margin:0 10rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .mainContent {
+    margin:0 1rem;
+  }
+}

@@ -1,4 +1,40 @@
 .banner {
   width: 100vw;
-  height: 200px;
+  margin-top: 4rem;
+  height: 26rem;
+  background-size: cover;
+  background-position: center;
+}
+.banner-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:0 10rem;
+  position: relative;
+  height:100%;
+}
+.character {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  max-width: 50%;
+  height: 100%;
+}
+.banner-content {
+  width:fit-content;
+  padding: 5rem 0;
+  flex: 1;
+  overflow: hidden;
+}
+.banner-content p {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.banner-content h1 {
+  text-transform: uppercase;
+}
+.banner-content h1 span {
+  display: block;
+  word-break: break-all;
 }

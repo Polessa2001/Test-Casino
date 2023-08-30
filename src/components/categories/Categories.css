@@ -1,0 +1,35 @@
+.categories {
+  margin-top: 2rem;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.category-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.category-switcher {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.category-name {
+  font-size: 1.25rem;
+}
+.gameCard {
+  width:11.75rem;
+  height: 11.75rem;
+  object-fit: cover;
+}
+.scrollBar {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  gap: 1rem;
+  margin-top: 1rem;
+}

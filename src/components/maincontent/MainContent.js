@@ -6,7 +6,7 @@ import './MainContent.css';
 
 const MainContent = () => {
   return (
-    <div>
+    <div className="mainContent">
       <Filters />
       <Categories />
       <Announcments />
