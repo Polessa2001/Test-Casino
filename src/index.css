@@ -1,0 +1,23 @@
+:root {
+  --primary-color: #FA2256;
+  --secondary-color: #262C42;
+  --background-color: #0E111A;
+  --bars-color: #191E2D;
+  --text-color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  font-size: 14px;
+}
