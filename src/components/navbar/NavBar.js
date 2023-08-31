@@ -4,6 +4,7 @@ import Button from '../../components/buttons/Button';
 import './NavBar.css';
 import '../../index.css';
 import vector from '../../assets/Vector.svg';
+import menu from '../../assets/BurgerMenu.svg';
 
 const NavBar = () => {
   return (
@@ -12,6 +13,7 @@ const NavBar = () => {
         <div className="logo">
           <a href="#"><img src={logo} alt="Logo" /></a>
         </div>
+        <button className="menu"><img src={menu} alt="menuIcon"/></button>
         <ul className="nav-links">
           <li><a href="#" alt="casino">Casino</a></li>
           <li><a href="#" alt="live-casino">Live Casino</a></li>

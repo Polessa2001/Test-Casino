@@ -34,3 +34,14 @@ p {
 button, a {
   cursor: pointer;
 }
+@media only screen and (max-width: 768px) {
+  body {
+    overflow:hidden;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .hidden {
+    display: none;
+  }
+}

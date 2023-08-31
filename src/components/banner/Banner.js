@@ -1,8 +1,10 @@
 import React from 'react';
 import './Banner.css';
+
 import banner from '../../assets/HeroBanner.png';
 import Button from '../../components/buttons/Button'
 import character from '../../assets/Character.svg';
+
 const Banner = () => {
   return (
     <section
@@ -16,7 +18,7 @@ const Banner = () => {
             </h1>
             <Button title="Join now!" color="var(--primary-color)" font='20px'/>
           </div>
-          <img className="character" src={character} />
+          <img className="character" src={character} shape-rendering="auto" image-rendering="auto" />
         </div>
     </section>
   );

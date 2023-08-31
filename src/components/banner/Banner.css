@@ -41,3 +41,40 @@
   display: block;
   word-break: break-all;
 }
+@media only screen and (max-width: 768px) {
+  .banner {
+    margin: 0;
+    height: 32.875rem;
+  }
+  .banner-box {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    margin:0 1rem;
+    position: relative;
+    height:100%;
+    padding-top: 1.5rem;
+  }
+  .banner-content h1 {
+    margin: 1rem 0 1.5rem 0;
+  }
+  .banner-content {
+    width:fit-content;
+    padding: unset;
+    flex: 1;
+    overflow: hidden;
+  }
+  .banner-content a{
+   margin: 0 auto;
+  }
+  .character {
+    margin: 0 auto;
+    justify-self: center;
+    position: unset;
+    max-width:70%;
+    height: auto;
+  }
+}

@@ -15,20 +15,24 @@
 .logo {
   margin:auto 3.5rem;
 }
+
 .navbar-left {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .nav-links {
   display: flex;
   flex-direction: row;
   list-style: none;
   padding: 0.5rem 0;
 }
+
 .nav-links li {
   padding: 0 1rem;
 }
+
 .nav-buttons {
   display: flex;
   flex-direction: row;
@@ -37,6 +41,52 @@
 .nav-buttons > * {
   margin-left: 0.625rem;
 }
+
 .vector {
   padding: 1rem !important;
+}
+
+.menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: 3.5rem;
+    padding: 1rem;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  .logo {
+    margin: auto;
+  }
+  .nav-links li{
+    display: none;
+  }
+  .menu {
+    display:block;
+    position: absolute;
+    background: none;
+    border: none;
+    left: 1rem;
+    top: 1rem;
+  }
+  .menu img {
+    object-fit: cover;
+    width:100%;
+    background-color: none;
+  }
+  .nav-buttons {
+    margin: 0;
+    position: absolute;
+    right:1rem;
+  }
+  .nav-buttons a{
+    background: none !important;
+  }
+  .nav-buttons > *:not(:first-child) {
+    display: none;
+  }
 }
