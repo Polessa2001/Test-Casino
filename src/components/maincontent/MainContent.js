@@ -1,7 +1,7 @@
 import React from 'react';
 import Filters from '../filters/Filters';
 import Categories from '../categories/Categories';
-import Announcments from '../announcments/Announcments';
+import Promos from '../promos/Promos';
 import './MainContent.css';
 
 const MainContent = () => {
@@ -9,7 +9,7 @@ const MainContent = () => {
     <div className="mainContent">
       <Filters />
       <Categories />
-      <Announcments />
+      <Promos />
     </div>
   );
 }

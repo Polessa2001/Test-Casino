@@ -33,13 +33,13 @@ const Footer = () => {
       </div>
       <div className="footer-right">
         <div className="payment">
-          <div><img src ={visa} /></div>
-          <div><img src = {mastercard} /></div>
-          <div><img src = {astropay} /></div>
-          <div><img src = {crypto} /></div>
+          <div><img src ={visa} alt="visa"/></div>
+          <div><img src = {mastercard} alt="mastercard"/></div>
+          <div><img src = {astropay} alt="astropay"/></div>
+          <div><img src = {crypto} alt="crypto"/></div>
         </div>
-        <div>
-          <img src={footerImg}/>
+        <div className="footer-right-content">
+          <img src={footerImg} alt = "footer-Image"/>
           <p>This website is operated by R&B Innovations N.V., a company registered and established under the laws of Curaçao, with registration number 156744 and registered address at Heelsumstraat 51 E-Commerce Park, Willemstad, Curaçao. It wholly owns the subsidiary for payment processing, Double Down Interactive Ltd, a company registered under the laws of Cyprus, with registration number ΗΕ 419951 and registered address at Chytron, 30, 2nd floor, Flat/Office A22, 1075, Nicosia, Cyprus.R&B Innovations N.V. is licensed to conduct online gaming operations by the Government of Curacao, under Master License No. 8048,Sub-License JAZ2021-012.</p>
         </div>
       </div>

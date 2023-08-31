@@ -22,14 +22,24 @@
   font-size: 1.25rem;
 }
 .gameCard {
+  flex-grow: 1;
+  flex-shrink: 0;
   width:11.75rem;
   height: 11.75rem;
   object-fit: cover;
 }
 .scrollBar {
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
+  display: grid;
+  grid-auto-flow: column;
+  flex-wrap:nowrap;
+  overflow: hidden; /* Hide the scrollbar */
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* Hide scrollbar on Edge */
+  scrollbar-width: none;
+  overscroll-behavior-inline: contain;
   gap: 1rem;
   margin-top: 1rem;
+}
+.scrollBar::-webkit-scrollbar {
+  display: none;
 }

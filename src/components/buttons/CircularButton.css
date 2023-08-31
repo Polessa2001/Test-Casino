@@ -6,4 +6,9 @@
   text-align: center;
   line-height: 40px;
   margin-left: 0.5rem;
+  border:none;
+  color:var(--text-color);
+}
+.circular-button span {
+  font-size: 1.25rem;
 }
