@@ -4,6 +4,7 @@
   --background-color: #0E111A;
   --bars-color: #191E2D;
   --text-color: #FFFFFF;
+  --border-color: #6C7A97;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
 }
@@ -35,9 +36,6 @@ button, a {
   cursor: pointer;
 }
 @media only screen and (max-width: 768px) {
-  body {
-    overflow:hidden;
-  }
   h1 {
     font-size: 2rem;
   }
