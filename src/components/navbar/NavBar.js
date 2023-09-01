@@ -11,6 +11,7 @@ import CircularButton from '../buttons/CircularButton';
 const NavBar = () => {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
   const mobileOverlay = useRef(null);
+  const navBar = useRef(null)
   const showMenu = () => {
     setMenuIsVisible(true);
   };
@@ -24,17 +25,19 @@ const NavBar = () => {
     if (menuIsVisible) {
       if (mobileOverlay.current) {
         mobileOverlay.current.classList.add('mobile-sidebar-overlay');
+        navBar.current.classList.add('hidden');
       }
     } else {
       if (mobileOverlay.current) {
         mobileOverlay.current.classList.remove('mobile-sidebar-overlay');
+        navBar.current.classList.remove('hidden');
       }
     }
   }, [menuIsVisible]);
 
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar" ref={navBar}>
         <div className="navbar-left">
           <div className="logo">
             <a href="#"><img src={logo} alt="Logo" /></a>
@@ -55,7 +58,7 @@ const NavBar = () => {
        <div className={`${menuIsVisible ? 'mobile-sidebar' : 'hidden'}`}>
         <div className="sidebar-top">
           <a href="#"><img src={logo} alt="Logo" /></a>
-          <CircularButton onClick={hideMenu} color='var(--secondary-color)' action={`<img src=${x} alt="closing icon" className="closing-icon" />`} />
+          <CircularButton class="circular-button-icon" onClick={hideMenu} color='var(--secondary-color)' action={`<img src=${x} alt="closing icon" className="closing-icon" />`} />
         </div>
         <ul className="mobile-links">
           <li><a href="#" alt="casino">Casino</a></li>

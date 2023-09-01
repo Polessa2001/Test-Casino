@@ -13,3 +13,13 @@
 .circular-button span {
   font-size: 1.25rem;
 }
+
+.circular-button-icon {
+  background-color: var(--secondary-color);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
