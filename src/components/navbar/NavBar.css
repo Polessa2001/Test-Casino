@@ -120,10 +120,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    transition: left 1s ease;
-  }
-  .mobile-sidebar.visible {
-    left: 0;
   }
   .mobile-sidebar-overlay {
     z-index: 999;
