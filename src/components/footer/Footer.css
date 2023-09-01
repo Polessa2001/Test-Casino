@@ -6,26 +6,31 @@
   padding: 2.875rem 10rem 9.5rem 10rem;
   background-color: var(--bars-color);
 }
+
 .footer-left {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-right: 10rem;
 }
+
 .information, .legal {
   display: flex;
   flex-direction: column;
   align-items:flex-start;
 }
+
 .footer-left ul {
   margin-top: 3.5rem;
   padding-left: 0;
 }
+
 .footer-left li {
   list-style: none;
   font-weight: 600 !important;
   margin-bottom: 1rem;
 }
+
 .payment {
   display: flex;
   flex-direction: row;
@@ -33,29 +38,35 @@
   justify-content: center;
   gap: 4rem;
 }
+
 .footer-right-content {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-top:3.5rem;
 }
+
 .footer-right-content p {
   font-size: 0.625rem;
   margin-right: 2rem;
   line-height: 1rem;
 }
+
 .footer-right-content img {
   width: 4.5rem;
   height: 4.5rem;
   object-fit: cover;
   margin:1rem;
 }
+
 .footer-right-content-mobile {
   display: none;
 }
-.buttons-fixe-bottom {
+
+.buttons-fixed-bottom {
   display: none;
 }
+
 @media only screen and (max-width: 768px) {
   .footer {
     display: flex;
@@ -63,11 +74,13 @@
     padding: unset;
     position: relative;
   }
+
   .footer-right {
     position: absolute;
     top: 1rem;
     width: 100%;
   }
+
   .footer-left {
     display: flex;
     flex-direction: column;
@@ -77,28 +90,35 @@
     padding: 4.5rem 2rem 2rem 2rem;
     margin-top: 4rem;
   }
+
   .footer-left ul {
     margin: 3rem 0;
     padding-left: 0;
   }
+
   .information .legal {
     display: flex;
     flex-direction: column;
     align-items:flex-start;
   }
+
   .information p, .legal p {
     font-size: 1rem;
     font-weight:700;
   }
+
   .payment {
     gap: 3rem;
   }
+
   .payment img {
     max-width: 3.5rem;
   }
+
   .footer-right-content {
     display: none;
   }
+
   .footer-right-content-mobile {
     display: flex;
     flex-direction: column;
@@ -108,18 +128,21 @@
     border: 1px solid var(--border-color);
     padding: 1.4rem;
   }
+
   .footer-right-content-mobile p {
     font-size: 0.625rem;
     margin-right: unset;
     padding-top: 2.25rem;
     line-height: 1rem;
   }
+
   .footer-right-content-mobile img {
     width: 4.5rem;
     height: 4.5rem;
     object-fit: cover;
     margin: auto;
   }
+
   .buttons-fixed-bottom {
     position: fixed;
     bottom: 0;

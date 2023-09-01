@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import logo from '../../assets/Logo.png';
 import Button from '../../components/buttons/Button';
 import './NavBar.css';
@@ -9,13 +9,29 @@ import x from '../../assets/X.svg';
 import CircularButton from '../buttons/CircularButton';
 
 const NavBar = () => {
-  const[menuIsVisible, setMenuIsVisible] = useState(false);
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
+  const mobileOverlay = useRef(null);
   const showMenu = () => {
     setMenuIsVisible(true);
-  }
+  };
+
   const hideMenu = () => {
     setMenuIsVisible(false);
-  }
+  };
+
+  useEffect(() => {
+    console.log(menuIsVisible);
+    if (menuIsVisible) {
+      if (mobileOverlay.current) {
+        mobileOverlay.current.classList.add('mobile-sidebar-overlay');
+      }
+    } else {
+      if (mobileOverlay.current) {
+        mobileOverlay.current.classList.remove('mobile-sidebar-overlay');
+      }
+    }
+  }, [menuIsVisible]);
+
   return (
     <>
       <nav className="navbar">
@@ -51,6 +67,7 @@ const NavBar = () => {
           <Button title="Join us"  color="var(--primary-color)" />
         </div>
       </div>
+      <div ref={mobileOverlay}></div>
    </>
   );
 }

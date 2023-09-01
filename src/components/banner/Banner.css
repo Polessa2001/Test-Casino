@@ -4,7 +4,9 @@
   height: 26rem;
   background-size: cover;
   background-position: center;
+  z-index:3;
 }
+
 .banner-box {
   display: flex;
   flex-direction: row;
@@ -13,6 +15,7 @@
   position: relative;
   height:100%;
 }
+
 .character {
   position: absolute;
   right: 0;
@@ -21,31 +24,38 @@
   max-width: 50%;
   height: 100%;
 }
+
 .banner-content {
   width:fit-content;
   padding: 5rem 0;
   flex: 1;
   overflow: hidden;
 }
+
 .banner-content a {
   padding: 1rem 2rem;
 }
+
 .banner-content p {
   font-weight: 500;
   font-size: 1.25rem;
 }
+
 .banner-content h1 {
   text-transform: uppercase;
 }
+
 .banner-content h1 span {
   display: block;
   word-break: break-all;
 }
+
 @media only screen and (max-width: 768px) {
   .banner {
     margin: 0;
     height: 32.875rem;
   }
+
   .banner-box {
     display: flex;
     box-sizing: border-box;
@@ -58,18 +68,22 @@
     height:100%;
     padding-top: 1.5rem;
   }
+
   .banner-content h1 {
     margin: 1rem 0 1.5rem 0;
   }
+
   .banner-content {
     width:fit-content;
     padding: unset;
     flex: 1;
     overflow: hidden;
   }
+
   .banner-content a{
    margin: 0 auto;
   }
+
   .character {
     margin: 0 auto;
     justify-self: center;

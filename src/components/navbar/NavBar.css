@@ -49,6 +49,7 @@
 .mobile-menu-icon {
   display: none;
 }
+
 .mobile-sidebar {
   display: none;
 }
@@ -56,21 +57,27 @@
 .hidden {
   display: none;
 }
+
 @media only screen and (max-width: 768px) {
   .navbar {
+    position:fixed;
+    top: 0;
+    left: 0;
     height: 3.5rem;
     padding: 1rem;
     justify-content: center;
-    position: relative;
     box-sizing: border-box;
     align-items: center;
   }
+
   .logo {
     margin: auto;
   }
+
   .nav-links li{
     display: none;
   }
+
   .mobile-menu-icon {
     display:block;
     position: absolute;
@@ -79,29 +86,34 @@
     left: 1rem;
     top: 1rem;
   }
+
   .menu img {
     object-fit: cover;
     width:100%;
     background-color: none;
   }
+
   .nav-buttons {
     margin: 0;
     position: absolute;
     right:1rem;
   }
+
   .nav-buttons a{
     background: none !important;
   }
+
   .nav-buttons > *:not(:first-child) {
     display: none;
   }
+
   .mobile-sidebar {
     z-index: 1000;
     position:fixed;
     top:0;
     left:0;
     background-color: var(--bars-color);
-    height:100vh;
+    height:100%;
     width: 75%;
     box-sizing: border-box;
     padding: 1.5rem;
@@ -109,6 +121,17 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .mobile-sidebar-overlay {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+
   .sidebar-top {
     display: flex;
     width: 100%;
@@ -116,15 +139,18 @@
     align-items: center;
     flex-direction: row;
   }
+
   .mobile-links {
     margin: 3rem 0;
     padding-left: unset;
   }
+
   .mobile-links li{
     list-style: none;
     line-height: 1.5rem;
     margin-bottom: 2rem;
   }
+
   .sidebar-buttons {
     display: flex;
     flex-direction: column;
@@ -132,6 +158,7 @@
     justify-content: space-between;
     width: 100%;
   }
+
   .sidebar-buttons .button {
     white-space: nowrap;
     position: relative;
@@ -140,8 +167,8 @@
     height:2.5rem;
     box-sizing: border-box;
   }
+
   .closing-icon {
-    z-index:10000;
     width:2rem;
   }
 }

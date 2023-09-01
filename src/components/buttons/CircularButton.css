@@ -9,6 +9,7 @@
   border:none;
   color:var(--text-color);
 }
+
 .circular-button span {
   font-size: 1.25rem;
 }

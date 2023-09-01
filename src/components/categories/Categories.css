@@ -1,6 +1,7 @@
 .categories {
   margin-top: 2rem;
 }
+
 .category {
   display: flex;
   flex-direction: column;
@@ -13,14 +14,17 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .category-switcher {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .category-name {
   font-size: 1.25rem;
 }
+
 .gameCard {
   flex-grow: 1;
   flex-shrink: 0;
@@ -28,6 +32,7 @@
   height: 11.75rem;
   object-fit: cover;
 }
+
 .scrollBar {
   display: grid;
   grid-auto-flow: column;
@@ -40,6 +45,7 @@
   gap: 1rem;
   margin-top: 1rem;
 }
+
 .scrollBar::-webkit-scrollbar {
   display: none;
 }

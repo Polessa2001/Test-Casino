@@ -32,8 +32,8 @@ const Category = (props) => {
         <p className="category-name">{props.name}</p>
         <div className="category-switcher">
           <a href="#" alt="view-more" style={{ fontSize: '0.75rem', paddingRight: '0.5rem' }}>View more</a>
-          <CircularButton action="&lt;" color="var(--bars-color)" onClick={() => handleScroll(-500)} />
-          <CircularButton action="&gt;" color="var(--primary-color)" onClick={() => handleScroll(500)} />
+          <CircularButton action="&lt;" color="var(--bars-color)" onClick={() => handleScroll(-350)} />
+          <CircularButton action="&gt;" color="var(--primary-color)" onClick={() => handleScroll(350)} />
         </div>
       </div>
       <div className="scrollBar" ref={scrollbarRef}>
