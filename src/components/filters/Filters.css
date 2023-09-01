@@ -24,4 +24,7 @@
     overflow: scroll;
     flex-wrap: nowrap;
   }
+  .filter {
+    white-space: nowrap;
+  }
 }
