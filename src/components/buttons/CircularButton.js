@@ -3,7 +3,7 @@ import './CircularButton.css';
 
 const CircularButton = (props) => {
   return (
-    <button onClick={props.onClick}className="circular-button" style = {{backgroundColor: props.color}}><span>{props.action}</span></button>
+    <button onClick={props.onClick}className="circular-button" style = {{backgroundColor: props.color}}><span dangerouslySetInnerHTML={{ __html: props.action }} /></button>
   )
 }
 

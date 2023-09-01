@@ -18,7 +18,7 @@ const Banner = () => {
             </h1>
             <Button title="Join now!" color="var(--primary-color)" font='20px'/>
           </div>
-          <img className="character" src={character} shape-rendering="auto" image-rendering="auto" />
+          <img className="character" src={character} />
         </div>
     </section>
   );

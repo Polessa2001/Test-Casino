@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../../components/buttons/Button';
 import './Footer.css';
 import footerImg from '../../assets/footerIcons/footerImg.png';
 import visa from '../../assets/footerIcons/visa.svg';
@@ -42,6 +43,14 @@ const Footer = () => {
           <img src={footerImg} alt = "footer-Image"/>
           <p>This website is operated by R&B Innovations N.V., a company registered and established under the laws of Curaçao, with registration number 156744 and registered address at Heelsumstraat 51 E-Commerce Park, Willemstad, Curaçao. It wholly owns the subsidiary for payment processing, Double Down Interactive Ltd, a company registered under the laws of Cyprus, with registration number ΗΕ 419951 and registered address at Chytron, 30, 2nd floor, Flat/Office A22, 1075, Nicosia, Cyprus.R&B Innovations N.V. is licensed to conduct online gaming operations by the Government of Curacao, under Master License No. 8048,Sub-License JAZ2021-012.</p>
         </div>
+      </div>
+      <div className="footer-right-content-mobile">
+        <img src={footerImg} alt = "footer-Image"/>
+        <p>This website is operated by R&B Innovations N.V., a company registered and established under the laws of Curaçao, with registration number 156744 and registered address at Heelsumstraat 51 E-Commerce Park, Willemstad, Curaçao. It wholly owns the subsidiary for payment processing, Double Down Interactive Ltd, a company registered under the laws of Cyprus, with registration number ΗΕ 419951 and registered address at Chytron, 30, 2nd floor, Flat/Office A22, 1075, Nicosia, Cyprus.R&B Innovations N.V. is licensed to conduct online gaming operations by the Government of Curacao, under Master License No. 8048,Sub-License JAZ2021-012.</p>
+      </div>
+      <div className="buttons-fixed-bottom">
+        <Button title="Log in" color="var(--secondary-color)" />
+        <Button title="Join us"  color="var(--primary-color)" />
       </div>
     </div>
   );
