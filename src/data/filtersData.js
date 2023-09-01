@@ -8,13 +8,13 @@ import popular from '../assets/filtersIcons/popular.svg';
 import tableGames from '../assets/filtersIcons/tableGames.svg';
 
 const filtersData = [
-  {id:1, filter: "slots", img: slots},
-  {id:2,filter: "books", img: books},
-  {id:3,filter: "drops", img: drops},
-  {id:4,filter: "instant Win", img: instantWin},
-  {id:5,filter: "jasckpots", img: jasckpots},
-  {id:6,filter: "megaways", img: megaways},
-  {id:7,filter: "popular", img: popular},
-  {id:8,filter: "table Games", img: tableGames}
+  {id:1, filter: "Slots", img: slots},
+  {id:2,filter: "Jasckpots", img: jasckpots},
+  {id:3,filter: "Megaways", img: megaways},
+  {id:4,filter: "Instant Win", img: instantWin},
+  {id:5,filter: "Table Games", img: tableGames},
+  {id:6,filter: "Popular", img: popular},
+  {id:7,filter: "Drops and Wins", img: drops},
+  {id:8,filter: "Books", img: books}
 ];
 export default filtersData;
